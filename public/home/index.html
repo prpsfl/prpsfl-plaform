@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Insert Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-storage.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+
+    
+
+	<title>PRPSFL</title>
+</head>
+<body>
+	<!-- Add side rectlangle -->
+	<div id="rectangle">
+		 
+	</div>
+
+	
+
+
+	 <!-- Image Hyperlink to PRPSFL.com -->
+    <div >
+      <a href="https://www.prpsfl.com/">
+        <img id="logo" src="logo.png" class="img-fluid" alt="Responsive image">
+      </a>
+
+      <a href="#" onclick="btnLogOut()">
+      	<img id="logout"  src="assets/sign-out-option.png" class="img-fluid" alt="Responsive image">
+     	<p id="logoutText">Log out</p>
+      </a>
+      
+    </div>
+   
+    	<!-- cards -->
+    	<div  class="flex-container">
+
+		  <div>
+		  	 <a href="#" onclick="getReport()" id="link">
+		       <img id="rectangle1" src="Download.jpeg" class="img-fluid" alt="Responsive image">	
+		    </a>	
+		  </div>
+
+
+		  <div>
+		  	 <a href="#" onclick="getSurvey()">
+		      <img id="rectangle2"  src="Survey.jpeg" class="img-fluid" alt="Responsive image">		
+		    </a>	
+		  </div>
+
+
+		  <div>
+		  	 <a onclick="toDatabase()" href="profile.html">
+		       	<img id="rectangle3" src="UserPic.jpeg" class="img-fluid" alt="Responsive image">		
+		    </a>	
+		  </div>
+		  
+		</div>
+    	
+	<script src="app.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+
+
+.flex-container {
+	
+	display: flex;
+	 justify-content: center;
+
+}
+
+
+#rectangle {;
+
+position: absolute;
+width: 68px;
+height: 755px;
+left: 0px;
+top: 0px;
+
+background: #502C6C;
+}
+
+/*Menu Items*/
+#dashboard {
+
+position: absolute;
+width: 54px;
+height: 35px;
+left: 7px;
+top: 69px;
+
+}
+
+#profile {
+
+position: absolute;
+width: 42px;
+height: 33px;
+left: 13px;
+top: 143px;
+
+
+}
+
+
+#loggout {
+
+position: absolute;
+width: 42px;
+height: 33px;
+left: 13px;
+top: 218px;
+
+
+}
+
+
+
+#logo {
+position: absolute;
+width: 140px;
+height: 140px;
+left: 114px;
+top: 6px;
+}
+
+/*Nav Bar*/
+#logout {
+
+position: absolute;
+width: 22px;
+height: 22px;
+left: 890px;
+top: 73px;
+
+
+
+}
+
+
+#logoutText {
+
+position: absolute;
+width: 59px;
+height: 18px;
+left: 920px;
+top: 51px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 35px;
+
+color: #502C6C;
+
+}
+
+
+
+
+
+
+
+/*Cards*/
+#rectangle1 {
+
+position: absolute;
+width: 288px;
+height: 174px;
+left: 132px;
+top: 197px;
+}
+
+
+#rectangle2 {
+
+position: absolute;
+width: 288;
+height: 174px;
+left: 441px;
+top: 197px;
+
+
+}
+
+#rectangle3 {
+
+
+position: absolute;
+width: 288;
+height: 174px;
+left: 767px;
+top: 197px;
+
+
+
+}
