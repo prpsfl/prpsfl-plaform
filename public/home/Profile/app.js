@@ -1,5 +1,5 @@
 
-function my() {
+
 
     // Set up firebase config
           var firebaseConfig = {
@@ -43,28 +43,31 @@ function my() {
             }
           });
 
-     
 
       //Get firebase reference to root folder
       var root = firebase.database().ref('/Users/' + currentUserId);
 
-      //Get data
-      return root.once('value').then(function(snapshot) {
 
-      fullName.textContent = (snapshot.val() && snapshot.val().url) || 'Anonymous';
+      // <------------- Check What this does -------------->
+
+     //  //Get data
+     //  return root.once('value').then(function(snapshot) {
+
+     //  fullName.textContent = (snapshot.val() && snapshot.val().url) || 'Anonymous';
       
-      // myName = (snapshot.val() && snapshot.val().Name) || 'Anonymous';
-      //  email.textContent = (snapshot.val() && snapshot.val().Email_Address) || 'Anonymous';
-      //  comPref.textContent = (snapshot.val() && snapshot.val().Communication_Preference) || 'Anonymous';
-      //  phone.textContent = (snapshot.val() && \snapshot.val().Phone_Number) || 'Anonymous';
+     //  // myName = (snapshot.val() && snapshot.val().Name) || 'Anonymous';
+     //  //  email.textContent = (snapshot.val() && snapshot.val().Email_Address) || 'Anonymous';
+     //  //  comPref.textContent = (snapshot.val() && snapshot.val().Communication_Preference) || 'Anonymous';
+     //  //  phone.textContent = (snapshot.val() && \snapshot.val().Phone_Number) || 'Anonymous';
+
+     //   console.log(fullName.textContent);
+
+     // });
+
+       // <----------------------------------------------------------------------------------------------------------------------------->
 
 
-       
-       console.log(fullName.textContent);
-
-     });
-
- }
+ 
 
 // Sign Out
      //Log Out Button
@@ -82,7 +85,7 @@ function my() {
               // User is signed in.
             } else {
               console.log("Sign out successful")
-              window.location.href = '../index.html';
+              window.location.href = '../../index.html';
             }
           });
         }

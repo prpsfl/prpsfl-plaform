@@ -16,27 +16,28 @@
         var survey;
 
         
+        // Change Text of users on the Profie Page
 
-        function changeText() {
-        	 var currentUserId;
-        	getCurrentUser();
-        	var phone = document.getElementById('phone');
+        // function changeText() {
+        // 	 var currentUserId;
+        // 	getCurrentUser();
+        // 	var phone = document.getElementById('phone');
 
-        	 //Get firebase reference to root folder
-        var root = firebase.database().ref('/Users/' + currentUserId);
+        // 	 //Get firebase reference to root folder
+        // var root = firebase.database().ref('/Users/' + currentUserId);
 
-        //Get data
-          return root.once('value').then(function(snapshot) {
-          phone.textContent = (snapshot.val() && snapshot.val().Phone_Number) || 'Anonymous';
+        // //Get data
+        //   return root.once('value').then(function(snapshot) {
+        //   phone.textContent = (snapshot.val() && snapshot.val().Phone_Number) || 'Anonymous';
           
 
-          console.log(phone.textContent);
+        //   console.log(phone.textContent);
 
           
 
-        });
+        // });
 
-        }
+        // }
 
 
 
@@ -137,6 +138,9 @@
       // End of downlaoding report from database
 
 
+
+
+//Make this work
       //Function to add new user data to database
       function toDatabase() {
 
@@ -160,21 +164,17 @@
                   
             //declare variables
              var latest = {
-            "Name": "John Smith",
-            "Phone Number": '07879916165',
-            "Email Address": user.email,
+            "Name": "",
+            "Phone_Number": "",
+            "Email_Address": user.email,
             "url": "https://firebasestorage.googleapis.com/v0/b/prpsfl-mvp-6d305.appspot.com/o/Reports%2F010-Alpha-reports.pdf?alt=media&token=b97c962c-6077-4d22-8935-41ef37abe4f3",
             "Commit" :
                 {
-                  "Celebration Commit":"",
-                  "Improvement Commit":"",
-                  "Link to commit survey":""
+                  "Celebration_commit":"",
+                  "Improvement_commit":"",
+                  "Link_to_commit_survey":""
                 },
-            "Communication preference" :
-                {
-                  "Email":"false",
-                  "Phone":"false"
-                }
+            "Communication_preference" : "Email"
           }
 
             console.log(currentUserId);
@@ -182,6 +182,10 @@
             var storesRef = rootRef.child('Users/' + currentUserId);
             
             storesRef.set(latest);
+
+            window.location.href = profile/index.html;
+
+            
 
           }
         
