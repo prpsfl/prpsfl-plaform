@@ -64,7 +64,7 @@ top: 6px;
 }
 
 /*Nav Bar*/
-#logout {
+#btnLogOutLogo {
 
 position: absolute;
 width: 22px;
@@ -74,24 +74,26 @@ top: 73px;
 
 
 
+
+
 }
 
 
 #logoutText {
 
-position: absolute;
-width: 59px;
-height: 18px;
-left: 920px;
-top: 51px;
+	position: absolute;
+    width: 59px;
+    height: 18px;
+    left: 920px;
+    top: 51px;
 
-font-family: Open Sans;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 35px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 35px;
 
-color: #502C6C;
+    color: #502C6C;
 
 }
 

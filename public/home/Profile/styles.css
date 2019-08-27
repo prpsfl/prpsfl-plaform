@@ -1,0 +1,227 @@
+
+
+#rectangle {
+
+position: absolute;
+width: 68px;
+height: 900px;
+left: 0px;
+top: 0px;
+
+background: #502C6C;
+}
+
+
+#group8 {
+
+position: absolute;
+width: 99px;
+height: 99px;
+left: 114px;
+top: 133px;
+
+}
+
+
+#fullName {
+
+position: absolute;
+width: 109px;
+height: 19px;
+left: 262px;
+top: 155px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+
+color: #502C6C;
+
+}
+
+
+#email {
+position: absolute;
+width: 222px;
+height: 19px;
+left: 262px;
+top: 189px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 23px;
+
+color: #502C6C;
+
+}
+
+
+#dashboard {
+
+position: absolute;
+width: 54px;
+height: 35px;
+left: 7px;
+top: 69px;
+
+}
+
+#profile {
+
+position: absolute;
+width: 42px;
+height: 33px;
+left: 13px;
+top: 143px;
+
+
+}
+
+#btnLogOutLogo {
+
+position: absolute;
+width: 22px;
+height: 22px;
+left: 890px;
+top: 73px;
+
+}
+
+#btnLogOutText {
+	position: absolute;
+    width: 59px;
+    height: 18px;
+    left: 920px;
+    top: 51px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 35px;
+
+    color: #502C6C;
+}
+
+#mobileIconLogo {
+	  position: absolute;
+	  width: 19.73px;
+	  height: 30px;
+	  left: 127px;
+	  top: 276px;
+}
+
+
+#phoneText {
+	  position: absolute;
+	  width: 128px;
+	  height: 20px;
+	  left: 163px;
+	  top: 284px;
+
+	  font-family: Open Sans;
+	  font-style: normal;
+	  font-weight: normal;
+	  font-size: 15px;
+	  line-height: 20px;
+
+	  color: #1E1E1E;
+
+}
+
+
+
+#logo {
+
+position: absolute;
+width: 110px;
+height: 110px;
+left: 114px;
+top: 6px;
+}
+
+
+#comPrefLogo {
+position: absolute;
+width: 35px;
+height: 27px;
+left: 121px;
+top: 341px;
+}
+
+
+#comPrefText {
+
+	position: absolute;
+    width: 128px;
+    height: 20px;
+    left: 164px;
+    top: 343px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+
+    color: #1E1E1E;
+}
+
+
+#phone {
+
+position: absolute;
+width: 140px;
+height: 25px;
+left: 344px;
+top: 284px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 20px;
+
+color: #000000;
+}
+
+#comPref {
+position: absolute;
+width: 140px;
+height: 25px;
+left: 344px;
+top: 345px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 20px;
+
+color: #000000;
+}
+
+
+#fixedText {
+
+position: absolute;
+width: 363px;
+height: 86px;
+left: 121px;
+top: 430px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 19px;
+
+color: #000000;
+}
+
+
+

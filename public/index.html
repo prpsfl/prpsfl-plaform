@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-<title>Login page</title>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
+
+<title>Login page</title>
+
     
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,600,800" rel="stylesheet">
@@ -20,6 +21,53 @@
 <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
 
+<style type="text/css">
+	
+	#contactUs {
+		position: 
+		absolute;
+		width: 100px;
+		height: 20px;
+		left: 27px;
+		top: 29px;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 22px;
+		text-align: center;
+
+		color: #FFFFFF;
+		}
+
+		#office {
+			position: absolute;
+			width: 468px;
+			height: 298px;
+			left: 150px;
+			top: 145px;
+		}
+
+		#frontText {
+			position: absolute;
+			width: 390px;
+			height: 114px;
+			left: 178px;
+			top: 479px;
+
+			font-family: Open Sans;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 30px;
+			line-height: 31px;
+			text-align: center;
+			letter-spacing: 0.03em;
+
+			color: #FFFFFF;
+		}
+
+</style>
+
     
 </head>
     
@@ -30,51 +78,19 @@
 
 <!-- Left Section -->
 <div class="d-md-flex h-md-100 align-items-center">
-	<div class="col-md-6 p-0 bg-indigo h-md-100">
+	<div class="d-none d-lg-flex col-md-6 p-0 bg-indigo h-md-100">
 		<div class="text-white d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
 			<div class="logoarea pt-5 pb-5">
 				
 					<!-- Insert writing stating happiness at work platform -->
 
 				<a href="https://www.prpsfl.com">
-					<p style="position: absolute;width: 100px;height: 20px;left: 27px;top: 29px;
-												font-family: Open Sans;
-												font-style: normal;
-												font-weight: 600;
-												font-size: 16px;
-												line-height: 22px;
-												text-align: center;
-
-												color: #FFFFFF;
-												">Contact Us
-									</p>
+					<p id="contactUs">Contact </p>
 				</a>
 					
-				
-				<img style="position: absolute;
-							width: 468px;
-							height: 298px;
-							left: 150px;
-							top: 145px;" src="office.png">
+				<img class="img-fluid" id="office" src="assets/office.png">
 
-				<p style="position: absolute;
-							width: 390px;
-							height: 114px;
-							left: 178px;
-							top: 479px;
-
-							font-family: Open Sans;
-							font-style: normal;
-							font-weight: 600;
-							font-size: 30px;
-							line-height: 31px;
-							text-align: center;
-							letter-spacing: 0.03em;
-
-							color: #FFFFFF;">Helping people love work so that they can live a more fulfilling life
-
-				</p>
-
+				<p id="frontText" >Helping people love work so that they can live a more fulfilling life </p>
 
 			</div>
 		</div>
@@ -88,28 +104,31 @@
 
 				<!-- Logo -->
 				<a href="https://www.prpsfl.com/">
-			     	<img src="logo.png" class="img-fluid" alt="Responsive image" >
+			     	<img src="assets/logo.png" class="img-fluid" alt="Responsive image" >
 			     </a>
+
 				<h3 class="mb-4 text-center">Sign In</h3>
 				<div class="form-group">
 					<input type="email" class="form-control" id="txtEmail" aria-describedby="emailHelp" placeholder="E-mail" required="">
 					<input type="password" class="form-control" id="txtPassword" aria-describedby="passwordHelp" placeholder="Password" required="">
 				</div>
+
 				<div class="form-group form-check">
 					<input type="checkbox" class="form-check-input" id="exampleCheck1">
 					<label class="form-check-label small text-muted" for="exampleCheck1">Remember me</label>
 				</div>
+
 					<button id="btnLogin" class="btn btn-success btn-round btn-block shadow-sm">Login</button>
 
 					<!-- Sign Up -->
 					<button type="button" id="btnSignUp" onclick="btnSignUp ()" class="btn  btn-round btn-block shadow-sm" style="background-color: #E5E5E5;">Sign Up</button>
-					
+
+			</div>
+		</div>
+	</div>
+</div>		
 
 
-					 
-       
-  
-   
 <!--------------------------------------
 JAVASCRIPTS
 --------------------------------------->    

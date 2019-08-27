@@ -15,6 +15,30 @@
         var report;
         var survey;
 
+        
+
+        function changeText() {
+        	 var currentUserId;
+        	getCurrentUser();
+        	var phone = document.getElementById('phone');
+
+        	 //Get firebase reference to root folder
+        var root = firebase.database().ref('/Users/' + currentUserId);
+
+        //Get data
+          return root.once('value').then(function(snapshot) {
+          phone.textContent = (snapshot.val() && snapshot.val().Phone_Number) || 'Anonymous';
+          
+
+          console.log(phone.textContent);
+
+          
+
+        });
+
+        }
+
+
 
         //Log Out Button
         function btnLogOut () {
@@ -82,6 +106,9 @@
           
 
           console.log(survey);
+
+          
+
           window.location.href = survey;
 
         });
