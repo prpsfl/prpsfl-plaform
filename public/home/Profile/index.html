@@ -4,6 +4,7 @@
 	<title>PRPSFL</title>
 
 	 <link rel="stylesheet" href="styles.css">
+   
    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
@@ -13,6 +14,7 @@
 </head>
 
 <body >
+  <!-- *****************Refactore core and add comments**************** --> 
 
 	<!-- Add side rectlangle -->
 	<div id="rectangle">
@@ -26,9 +28,14 @@
       </a>
 
 
-  
+     <a href="../index.html"> 
+       
+        <p id="homeText" onclick="goToHome()">Home</p> 
+      </a>
+
      <a  href="#" onclick="btnLogOut()">
         <img id="btnLogOutLogo" src="assets/sign-out-option.png" class="img-fluid" alt="Responsive image">
+        
          <p id="btnLogOutText">Log out</p>
       </a>
   </div>
@@ -39,7 +46,7 @@
 
  <span id="fullName">Jane Doe </span>
 
-  <span id="email">janedoe@prpsfl.com</span>
+  <span id="email">*****@prpsfl.com</span>
 
 
      <img id="mobileIconLogo" 
@@ -57,7 +64,7 @@
 
 
 
- <img  src="assets/Preferred Comm.png" class="img-fluid" alt="Responsive image"> 
+ <img  id="comPrefLogo" src="assets/Preferred Comm.png" class="img-fluid" alt="Responsive image"> 
 
 
 
@@ -68,20 +75,21 @@
 
 
 
-<span id="phone">0907 833 4872</span>
+<span id="phone">**** *** ****</span>
 
 
 
 
 <span id="comPref">
   
-Email</span>
+*****</span>
 
 
 <p id="fixedText" >
   To update any of your details or request for your account to be deleted and your details removed from our database, email social@prpsfl.com
-  <button onclick="my()">clicked</button>
 </p>
+
+ <button id="seeDetailsBtn" onclick="changeText()">See my details</button>
 
 
 

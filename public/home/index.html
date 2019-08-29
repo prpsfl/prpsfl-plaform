@@ -1,84 +1,130 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title></title>
+<meta charset="utf-8"/>
 
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-	<!-- Insert Jquery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-storage.js"></script>
-
-    <link rel="stylesheet" href="styles.css">
-
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<title>Login page</title>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
     
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,600,800" rel="stylesheet">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Main CSS -->
+<link href="../assets/css/main.css" rel="stylesheet"/>
+    
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
 
-	<title>PRPSFL</title>
+
 </head>
 <body>
-	<!-- Add side rectlangle -->
-	<div id="rectangle">
-		 
+
+
+<!-- Main -->
+
+
+<!-- Left Section -->
+<div class="d-md-flex h-md-100 align-items-center">
+	<div class=" p-0 bg-indigo h-md-100" style="max-width: 68px !important;">
+		<div class="d-flex text-white d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
+				
+					<!-- Insert writing stating happiness at work platform -->
+					
+			
+		</div>
 	</div>
 
-	
+    
+  	<!-- Right Section -->
+	<div class="col-md-6 p-0 bg-white h-md-100 ">
+
+		<!-- ***********************CONTINUE FROM HERE *********************** -->
+
+		<div class="d-flex flex-column">
+
+			<div  class="mw-25 mh-25 ml-5" style="width: 140px;height: 140px;">
+				 <a href="https://www.prpsfl.com/">
+			        <img id="logo" src="assets/logo.png" class="img-fluid" alt="Responsive image">
+			      </a>
+
+			     <a href="#" onclick="btnLogOut()" >
+			      	<img id="btnLogOutLogo"  src="assets/sign-out-option.png" class="img-fluid" alt="Responsive image">
+			     	<div id="logoutText" class="align-self-start">Log out</div>
+			     </a>
+			</div>
+		</div>
+		
 
 
-	 <!-- Image Hyperlink to PRPSFL.com -->
-    <div >
-      <a href="https://www.prpsfl.com/">
-        <img id="logo" src="assets/logo.png" class="img-fluid" alt="Responsive image">
-      </a>
+		<!-- Flexbox container holding User Interface details -->
+		<div class="d-flex ml-5">
+			<h6>Thank you for logging in.
+			<ul>
+				<li>You can access your personalised report by clicking on the "Download Report" button below.</li>
+				<li>Once you have read your report, you can commit to an action plan by clicking on the "Commit Survey" button below.</li>
+				<li>To review the details PRPSFL hold on you and request changes, click on the "View Profile" button.</li>
+			</ul> 
+			</h6>
+		</div>
+			
+			
+		
 
-      <a href="#" onclick="btnLogOut()">
-      	<img id="btnLogOutLogo"  src="assets/sign-out-option.png" class="img-fluid" alt="Responsive image">
-     	<p id="logoutText">Log out</p>
-      </a>
-      
-    </div>
+				<!-- CUSTOM TOP AND BUTTOM MARGIN -->
+
+						<!-- --------------------------------------> 
+
+						<div  class="d-flex h-md-100 mt-5 flex-column flex-md-row ml-5" >
+
+							  <div>
+							  	 <a href="#" onclick="getReport()" id="link">
+							       <img id="rectangle1" src="assets/Download.jpeg" class="img-fluid" alt="Responsive image">	
+							    </a>	
+							  </div>
+
+
+
+							  <div>
+							  	 <a href="#" onclick="getSurvey()">
+							      <img id="rectangle2"  src="assets/Survey.jpeg" class="img-fluid" alt="Responsive image">		
+							    </a>	
+							  </div>
+
+
+
+							  <div>
+							  	 <a  href="profile/index.html">
+							       	<img id="rectangle3" src="assets/UserPic.jpeg" class="img-fluid" alt="Responsive image">		
+							    </a>	
+							  </div>
+							  
+						</div>
+					<!-- -------------------------------------------------- -->
+			
+		
+	</div>
+</div>	
+
+
+<!--------------------------------------
+JAVASCRIPTS
+--------------------------------------->    
+<script src="./assets/js/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/popper.min.js" type="text/javascript"></script>
+
+<!--------------------------------------
+BOOTSTRAP JAVASCRIPTS
+---------------------------------------> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     
-   
-    	<!-- cards -->
-    	<div  class="d-flex flex-column flex-md-row">
-
-				  <div>
-				  	 <a href="#" onclick="getReport()" id="link">
-				       <img id="rectangle1" src="assets/Download.jpeg" class="img-fluid" alt="Responsive image">	
-				    </a>	
-				  </div>
-
-
-
-				  <div>
-				  	 <a href="#" onclick="getSurvey()">
-				      <img id="rectangle2"  src="assets/Survey.jpeg" class="img-fluid" alt="Responsive image">		
-				    </a>	
-				  </div>
-
-
-
-				  <div>
-				  	 <a  href="profile/index.html">
-				       	<img id="rectangle3" src="assets/UserPic.jpeg" class="img-fluid" alt="Responsive image">		
-				    </a>	
-				  </div>
-				  
-		</div>
-    	
-	<script src="app.js"></script>
-
-
-<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Firebase starter files -->
+<script src="app.js"></script>
 </body>
 </html>

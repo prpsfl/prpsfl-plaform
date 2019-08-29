@@ -19,18 +19,9 @@
      var email= document.getElementById('email')
      var comPref = document.getElementById('comPref')
      var phone = document.getElementById('phone')
-     var myName;
+     
    
      var currentUserId;
-
-    //Get current user's username
-      // var userCurrent = firebase.auth().currentUser;
-
-      // if (userCurrent != null) {
-              
-      //     currentUserId = userCurrent.uid; 
-      //     console.log(currentUserId)
-      //   }
 
 
       //Check if user is signed out
@@ -47,27 +38,6 @@
       //Get firebase reference to root folder
       var root = firebase.database().ref('/Users/' + currentUserId);
 
-
-      // <------------- Check What this does -------------->
-
-     //  //Get data
-     //  return root.once('value').then(function(snapshot) {
-
-     //  fullName.textContent = (snapshot.val() && snapshot.val().url) || 'Anonymous';
-      
-     //  // myName = (snapshot.val() && snapshot.val().Name) || 'Anonymous';
-     //  //  email.textContent = (snapshot.val() && snapshot.val().Email_Address) || 'Anonymous';
-     //  //  comPref.textContent = (snapshot.val() && snapshot.val().Communication_Preference) || 'Anonymous';
-     //  //  phone.textContent = (snapshot.val() && \snapshot.val().Phone_Number) || 'Anonymous';
-
-     //   console.log(fullName.textContent);
-
-     // });
-
-       // <----------------------------------------------------------------------------------------------------------------------------->
-
-
- 
 
 // Sign Out
      //Log Out Button
@@ -89,5 +59,50 @@
             }
           });
         }
+
+
+
+     // Change Text of users on the Profie Page
+     function changeText() {
+        
+
+        
+         //Get current user's username
+        var userCurrent = firebase.auth().currentUser;
+
+        if (userCurrent != null) {
+          
+          currentUserId = userCurrent.uid; 
+          console.log(currentUserId)
+        }
+
+
+        
+          //Get firebase reference to root folder
+        var root = firebase.database().ref('/Users/' + currentUserId);
+
+        //Get data
+          return root.once('value').then(function(snapshot) {
+          fullName.textContent = (snapshot.val() && snapshot.val().Name) || 'Anonymous';
+          phone.textContent = (snapshot.val() && snapshot.val().Phone_Number) || 'Anonymous';
+          email.textContent = (snapshot.val() && snapshot.val().Email_Address) || 'Anonymous';
+         comPref.textContent = (snapshot.val() && snapshot.val().Communication_Preference) || 'Anonymous';
+
+          
+
+          console.log(fullName.textContent);
+
+          
+
+        });
+
+        }
+
+
+
+
+
+
+
 
  
