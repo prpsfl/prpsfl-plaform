@@ -183,14 +183,18 @@
             
             storesRef.set(latest);
 
-            window.location.href = profile/index.html;
+            window.location.href = "profile/index.html";
 
             
 
           }
         
 
-        
+        function goToProfilePage () {
+
+          window.location.href = "Profile/index.html"
+
+        }
         
 
 

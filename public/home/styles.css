@@ -1,14 +1,8 @@
 
 
-.flex-container {
-	
-	display: flex;
-	 justify-content: center;
+ 
 
-}
-
-
-#rectangle {;
+#rectangle {
 
 position: absolute;
 width: 68px;
@@ -53,15 +47,6 @@ top: 143px;
 }
 
 
-#loggout {
-
-position: absolute;
-width: 42px;
-height: 33px;
-left: 13px;
-top: 218px;
-
-}
 
 
 
@@ -73,6 +58,7 @@ width: 22px;
 height: 22px;
 left: 890px;
 top: 73px;
+
 
 }
 

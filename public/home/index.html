@@ -26,14 +26,13 @@
 
 <!-- Main -->
 
-
 <!-- Left Section -->
 <div class="d-md-flex h-md-100 align-items-center">
-	<div class=" p-0 bg-indigo h-md-100" style="max-width: 68px !important;">
+	<div class="d-none d-md-flex p-0 bg-indigo h-md-100 " style="max-width: 68px !important; ">
 		<div class="d-flex text-white d-md-flex align-items-center h-100 p-5 text-center justify-content-center">
 				
-					<!-- Insert writing stating happiness at work platform -->
-					
+					<!-- Insert Sidebar Icons -->
+
 			
 		</div>
 	</div>
@@ -42,20 +41,21 @@
   	<!-- Right Section -->
 	<div class="col-md-6 p-0 bg-white h-md-100 ">
 
-		<!-- ***********************CONTINUE FROM HERE *********************** -->
+		<!-- Flexbox container holding logo and sign-out button -->
 
-		<div class="d-flex flex-column">
+		<div>
 
-			<div  class="mw-25 mh-25 ml-5" style="width: 140px;height: 140px;">
-				 <a href="https://www.prpsfl.com/">
-			        <img id="logo" src="assets/logo.png" class="img-fluid" alt="Responsive image">
+			<a href="https://www.prpsfl.com/" >
+			        <img style="width: 140px; height: 140px ; margin-left: 35px" src="assets/logo.png" class="img-fluid" alt="Responsive image">
 			      </a>
 
-			     <a href="#" onclick="btnLogOut()" >
-			      	<img id="btnLogOutLogo"  src="assets/sign-out-option.png" class="img-fluid" alt="Responsive image">
-			     	<div id="logoutText" class="align-self-start">Log out</div>
-			     </a>
-			</div>
+
+			 <a  href="#" style="margin-left: 500px" onclick="btnLogOut()" >
+			 	<img  src="assets/sign-out-option.png" class="img-fluid" alt="Responsive image" style="width: 22px; height: 22px">
+			 	<span style=" font-family: Open Sans; font-style: normal; font-weight: 600; font-size: 14px;  line-height: 35px; color: #502C6C;">		Log out
+			 	</span>
+			 </a>
+
 		</div>
 		
 
@@ -65,66 +65,77 @@
 			<h6>Thank you for logging in.
 			<ul>
 				<li>You can access your personalised report by clicking on the "Download Report" button below.</li>
-				<li>Once you have read your report, you can commit to an action plan by clicking on the "Commit Survey" button below.</li>
-				<li>To review the details PRPSFL hold on you and request changes, click on the "View Profile" button.</li>
+				<li>Once you have read your report, you can commit to an action plan by clicking on the "Complete Survey" button below.</li>
+				<li>To review the details PRPSFL hold on you and request changes, click on the "Manage Profile" button.</li>
 			</ul> 
 			</h6>
 		</div>
 			
-			
-		
+		<!-- CUSTOM TOP AND BUTTOM MARGIN -->
 
-				<!-- CUSTOM TOP AND BUTTOM MARGIN -->
+				<!-- --------------------------------------> 
 
-						<!-- --------------------------------------> 
+				<div  class="d-flex h-md-100 mt-5 flex-column flex-md-row ml-5" >
 
-						<div  class="d-flex h-md-100 mt-5 flex-column flex-md-row ml-5" >
-
-							  <div>
-							  	 <a href="#" onclick="getReport()" id="link">
-							       <img id="rectangle1" src="assets/Download.jpeg" class="img-fluid" alt="Responsive image">	
-							    </a>	
-							  </div>
+					  <div>
+					  	 <a href="#" onclick="getReport()" id="link">
+					       <img id="rectangle1" src="assets/Download.jpeg" class="img-fluid" alt="Responsive image">	
+					    </a>	
+					  </div>
 
 
 
-							  <div>
-							  	 <a href="#" onclick="getSurvey()">
-							      <img id="rectangle2"  src="assets/Survey.jpeg" class="img-fluid" alt="Responsive image">		
-							    </a>	
-							  </div>
+					  <div>
+					  	 <a href="#" onclick="getSurvey()">
+					      <img id="rectangle2"  src="assets/Survey.jpeg" class="img-fluid" alt="Responsive image">		
+					    </a>	
+					  </div>
 
 
 
-							  <div>
-							  	 <a  href="profile/index.html">
-							       	<img id="rectangle3" src="assets/UserPic.jpeg" class="img-fluid" alt="Responsive image">		
-							    </a>	
-							  </div>
-							  
-						</div>
-					<!-- -------------------------------------------------- -->
+					  <div>
+					  	 <a  href="#" onclick="goToProfilePage()">
+					       	<img id="rectangle3" src="assets/UserPic.jpeg" class="img-fluid" alt="Responsive image">		
+					    </a>	
+					  </div>
+					  
+				</div>
+			<!-- -------------------------------------------------- -->
 			
 		
 	</div>
 </div>	
 
 
-<!--------------------------------------
-JAVASCRIPTS
---------------------------------------->    
-<script src="./assets/js/vendor/jquery.min.js" type="text/javascript"></script>
-<script src="./assets/js/vendor/popper.min.js" type="text/javascript"></script>
+
 
 <!--------------------------------------
 BOOTSTRAP JAVASCRIPTS
 ---------------------------------------> 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     
 <!-- Firebase starter files -->
 <script src="app.js"></script>
+
+
+<!-- Test -->
+
+<!-- 
+<div  class="mw-25 mh-25 ml-5" style="width: 140px;height: 140px;">
+				 <a href="https://www.prpsfl.com/">
+			        <img id="logo" src="assets/logo.png" class="img-fluid" alt="Responsive image">
+			      </a>
+
+			     <a  href="#" onclick="btnLogOut()" >
+			      	<img id="btnLogOutLogo"  src="assets/sign-out-option.png" class="img-fluid" alt="Responsive image">
+			     	<span id="logoutText" class="align-self-start">Log out</span>
+			     </a>
+			</div> -->
+
+
+ <!-- ###############*********************#################### -->
 </body>
 </html>
